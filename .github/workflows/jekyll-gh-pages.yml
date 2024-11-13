@@ -52,7 +52,7 @@ jobs:
         with:
           script: |
             const pr_number = ${{ github.event.pull_request.number }};
-            const deployment_url = ${{ steps.deployment.outputs.page_url }};
+            const deployment_url = "${{ steps.deployment.outputs.page_url }}";
             const comment_body = `🚀 The Jekyll site has been deployed! You can view it here: ${deployment_url}`;
             
             const response = await github.rest.issues.createComment({
