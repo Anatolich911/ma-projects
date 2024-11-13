@@ -7,6 +7,8 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  issues: write  # Add this line to allow comment creation
+  pull-requests: write  # Add this line to allow PR comment creation
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
